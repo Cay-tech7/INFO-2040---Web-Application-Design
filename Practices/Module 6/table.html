@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+
+   <head>
+
+      <meta charset="UTF-8">
+         
+      <title>HTML Practice 6 - Tables</title>
+
+      <style type="text/css">
+         table, th, td {
+            border: 1px solid black;
+            text-align: center;
+
+         }
+
+         table {
+            margin: auto;
+            width: 550px;
+         }
+
+         h1 {
+            text-align: center;
+            color: #003300;
+         }
+
+         div.center {
+            text-align: center;
+         }
+
+         caption.captionstyle {
+            color: #003300;
+            font-weight: bold;
+            padding: 10px;
+         }
+
+         .courses {
+            background-color: #CCCCCC;
+            width: 25%;
+         }
+
+         .days {
+            width: 15%;
+         }
+
+         th.dayheader {
+            background-color: #99FF66;
+         }
+
+      </style>
+   </head>
+
+   <body>
+      <div >
+         <table cellpadding="0" cellspacing="5">
+            <caption class="captionstyle">My Class Schedule</caption>
+            
+            <colgroup>
+               <col class="courses">
+            </colgroup>
+
+            <colgroup span="5" class="days"></colgroup>
+
+            <tr>
+               <th class="courses">Courses</th>
+               <th class="dayheader">Monday</th>
+               <th class="dayheader">Tuesday</th>
+               <th class="dayheader">Wednesday</th>
+               <th class="dayheader">Thursday</th>
+               <th class="dayheader">Friday</th>
+            </tr>
+
+            <tr>
+               <th class="courses">INFO 1120</th>
+               <td></td>
+               <td>9-11</td>
+               <td></td>
+               <td>9-11</td>
+               <td rowspan="2"></td>
+            </tr>
+
+            <tr>
+               <th class="courses">MATH 1010</th>
+               <td colspan="4">12-1</td>
+            </tr>
+
+            <tr>
+               <th class="courses">INFO 2420</th>
+               <td colspan="5">Online Avalable 24/7</td>
+            </tr>
+         </table>
+      </div>
+
+
+
+   </body>
+</html>
+
