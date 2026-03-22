@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculations</title>
+    <script type="text/javascript">
+      // Declare variables
+      var mins_per_hour = 60;
+      var hours_per_day = 24;
+      var days_per_year = 365;
+
+      // Calculate seconds per year
+      var secs_per_min = 60;
+      var mins_per_day = mins_per_hour * hours_per_day;
+      var mins_per_year = mins_per_day * days_per_year;
+      var secs_per_year = mins_per_year * secs_per_min;
+
+      // Output results to the page
+      document.writeln("Minutes per day: " + mins_per_day + "<br>");
+      document.writeln("Minutes per year: " + mins_per_year + "<br>");
+      document.writeln("Seconds per year: " + secs_per_year + "<br>");
+
+	  //Promt the user for the Mad Lib inputs
+	  var person = prompt("Enter a person's name:");
+	  var place = prompt("Enter a place:");
+	  var action = prompt("Enter an action (verb):");
+	  var adjective = prompt("Enter an adjective:");
+
+	  //Concatenate the inputs into a Mad Lib story
+	  var madLib = person + " went to " + place + " and " + action + " the " + adjective + " car!";
+
+	  //Output the Mad Lib story to the page
+	  document.writeln("<br><br>" + madLib);
+	  document. writeln("<br><br>Thank you for playing the Mad Lib game!");
+    </script>
+  </head>
+  <body>
+    <h1>Calculations Example</h1>
+  </body>
+</html>
