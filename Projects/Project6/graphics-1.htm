@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Extreme Honeymoons - Graphics</title>
+
+            <style>
+
+                #thumbs, #image {
+                    width: 1100px;
+                    text-align: center;
+                    margin: 0 auto 0 auto;
+                    color: #000;
+                }
+
+                #thumbs {
+                    margin-top: 10px;
+                }
+
+                        
+                #thumbs img {
+                    border: solid 5px #428F96;
+                    margin: 5px;
+                    height: 160px;
+                }
+
+                #image{
+                    height:500px;
+                }
+
+                .instructions{
+                    font-style:italic;
+                }
+
+                body {
+                    background-image: url("Background/Project6Background.png");
+					background-repeat: repeat-y;
+					background-size: 100% auto;
+                }
+
+                #centerContainer {
+                    text-align: center;
+                }
+
+            </style>
+
+            <script>
+
+                PrintButton1 = new Image
+                PrintButton2 = new Image
+                logo1 = new Image
+                logo2 = new Image
+                    if (document.images) {
+                        PrintButton1.src = "Background/PrintPage.png"
+                        PrintButton2.src = "Background/PrintPageAlt.png"
+                        logo1.src = "Images/ExtremeHoneymoonsLogo.png"
+                        logo2.src = "Images/ExtremeHoneymoonsLogoAlt.png"
+                    }
+
+
+                    var imgArray = new Array(
+                        'CoupleBike1Lg.jpg',
+                        'CoupleHikingLg.jpg',
+                        'SkiCouple3Lg.jpg',
+                        'CoupleCampingLg.jpg'
+                        
+
+                    );
+
+
+                    var titleArray = new Array(
+                        'Mountain Biking',
+                        'Lovely Hike',
+                        'Downhill Skiing',
+                        'Camping in the Woods'
+                        
+                    );
+                        
+                    var imgPath = "Honeymoon/";
+                    
+                    function swapImage(imgID) {
+
+                        var theImage = document.getElementById('theImage');
+                        var textDiv = document.getElementById('bottomText');
+
+                        var newImg;
+                        var textTitle;
+
+                        newImg = imgArray[imgID];
+                        theImage.src = imgPath + newImg;
+
+                        textTitle=titleArray[imgID];
+
+                            textDiv.innerHTML = textTitle;
+                    }
+                        
+                    function preloadImages() {		
+                        for(var i = 0; i < imgArray.length; i++) {
+                            var tmpImg = new Image;
+                            tmpImg.src = imgPath + imgArray[i];
+                        }
+                    }
+                    
+
+            </script>
+    </head>
+
+    <body onload="preloadImages()">
+
+        <div id="centerContainer">
+
+        <div>
+            <a href="" onmouseOver="document.getElementById('PrintButton').src=PrintButton2.src;"
+            onmouseOut="document.getElementById('PrintButton').src=PrintButton1.src;">
+
+            <img id="PrintButton" src="Background/PrintPage.png" width="250" height="50" 
+            alt="PrintButton" style="border:none;">
+
+            </a>
+        </div>
+
+
+        <div>
+            <a href="" onmouseOver="document.getElementById('logo').src=logo2.src;"
+            onmouseOut="document.getElementById('logo').src=logo1.src;">
+
+            <img id="logo" src="Images/ExtremeHoneymoonsLogo.png" width="133" height="126" 
+            alt="logo" style="border:none;">
+
+            </a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div id="thumbs">
+                <img src="Images/BikeCouple1Sm.jpg" alt="Mountain Biking" onmouseover="swapImage(0);">
+                <img src="Images/CoupleHikingSm.jpg" alt="Lovely Hike" onmouseover="swapImage(1);">
+                <img src="Images/SkiCouple3Sm.jpg" alt="Downhill Skiing" onmouseover="swapImage(2);">
+                <img src="Images/CoupleCampingsm.jpg" alt="Camping" onmouseover="swapImage(3);">
+                
+        </div>
+
+        <div id="image">
+
+            <img id="theImage" src="Honeymoon/CoupleBike1Lg.jpg" alt="Mountain Biking">
+            <h3 id="bottomText">Mountain Biking</h3>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        </div>
+
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer"><img
+            src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88"></a>
+        </p>
+    
+
+    </body>
+</html>
