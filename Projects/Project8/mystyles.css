@@ -289,6 +289,7 @@ article p {
    Footer
    ===================== */
 footer {
+	position: relative;
     width: 900px;
     height: 80px;
     background-color: #297980;
@@ -314,6 +315,12 @@ footer a:visited {
 footer a:hover {
     color: #93C33D;
     text-decoration: underline;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 /* =====================

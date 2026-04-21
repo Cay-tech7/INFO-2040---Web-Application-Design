@@ -217,6 +217,11 @@ footer {
     display: none;
 }
 
+.bottomleft {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
 /* =====================
    Print-off utility class
    ===================== */
