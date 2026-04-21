@@ -1,0 +1,332 @@
+/* CSS Document - mystyles.css */
+
+/* =====================
+   Body
+   ===================== */
+body {
+    background-color: #D6F7DA;
+    color: #297980;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* =====================
+   Headings
+   ===================== */
+h1 {
+    color: #33A340;
+    font-size: 180%;
+}
+
+h2 {
+    color: #33A340;
+    font-size: 150%;
+}
+
+h3 {
+    color: #33A340;
+    font-size: 130%;
+}
+
+/* =====================
+   Paragraph & Text
+   ===================== */
+p {
+    line-height: 1.4;
+}
+
+blockquote {
+    font-style: italic;
+    margin-left: 2em;
+}
+
+ul, ol {
+    margin-left: 2em;
+}
+
+.backstop {
+	background-color: rgba(214, 247, 218, 0.88);
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+/* =====================
+   Links (general)
+   ===================== */
+a:link {
+    color: #428F96;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6AB1B7;
+}
+
+a:hover {
+    color: #93C33D;
+    text-decoration: underline;
+}
+
+/* =====================
+   Image Float Classes
+   ===================== */
+.img-left {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.img-right {
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* =====================
+   Table Styles
+   ===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 95%;
+}
+
+caption {
+    background-color: #d1eef1;
+    color: #297980;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 120%;
+}
+
+th {
+    background-color: #33A340;
+    color: white;
+    padding: 10px;
+    font-size: 110%;
+    border: 1px solid #297980;
+}
+
+td {
+    background-color: #9CD3D8;
+    border: 1px solid #297980;
+    padding: 8px;
+    font-size: 100%;
+}
+
+/* =====================
+   Container - 900px centered layout
+   ===================== */
+#container {
+    width: 900px;
+    margin: 0 auto;
+	
+}
+
+/* =====================
+   Header
+   ===================== */
+header {
+    width: 900px;
+    height: 185px;
+    background-color: #33A340;
+    overflow: hidden;
+    box-sizing: border-box;
+	padding: 15px;
+	
+}
+
+#logo {
+    float: left;
+    height: 130px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#banner {
+    float: left;
+    height: 130px;
+    margin: 10px 0;
+}
+
+/* =====================
+   Nav - 30% width, floated right inside header
+   ===================== */
+/* Header nav */
+header nav {
+    float: right;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* In-page jump menu nav */
+section > nav {
+    float: none;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px 20px;
+}
+header nav a:link {
+    display: block;
+    text-align: center;
+    padding: 6px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #297980;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+header nav a:visited {
+    color: #ffffff;
+    background-color: #297980;
+}
+
+header nav a:hover {
+    background-color: #93C33D;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav {
+    float: right;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+nav a:link {
+    display: block;
+    text-align: center;
+    padding: 6px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #297980;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+nav a:visited {
+    color: #ffffff;
+    background-color: #297980;
+}
+
+nav a:hover {
+    background-color: #93C33D;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* =====================
+   Section - background image repeats vertically
+   ===================== */
+section {
+    width: 900px;
+    background-image: url('Images/background.png');
+    background-repeat: repeat-y;
+}
+
+/* Inner sections inside article should not have fixed width */
+article section {
+    width: 100%;
+    background-image: none;
+    background-color: transparent;
+}
+/* Thumbnail images in gallery */
+.thumbnail {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Fullsize display image */
+#fullsize {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* =====================
+   Article - main content area
+   ===================== */
+article {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+article p {
+    text-align: left;
+}
+
+#tributeimg {
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 150px;
+}
+
+/* =====================
+   Footer
+   ===================== */
+footer {
+    width: 900px;
+    height: 80px;
+    background-color: #297980;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    clear: both;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #D6F7DA;
+}
+
+footer a:link {
+    color: #D6F7DA;
+}
+
+footer a:visited {
+    color: #9CD3D8;
+}
+
+footer a:hover {
+    color: #93C33D;
+    text-decoration: underline;
+}
+
+/* =====================
+   Splash Page
+   ===================== */
+#splash-container {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#imagemap-wrapper {
+    display: inline-block;
+    margin-top: 20px;
+}
